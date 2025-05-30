@@ -1,5 +1,5 @@
 "use client";
-import { DogoRole } from "@/mocks/dogorole";
+import { DogoRole } from "@/mocks/dogo";
 import { motion } from "framer-motion";
 export default function ProjectRole() {
   const blockVariants = {
