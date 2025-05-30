@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/page";
 import HoverSections from "@/components/sections/HoverSection";
+import SkillSection from "@/components/sections/SkillSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <div className="-mx-4 md:-mx-8 lg:-mx-16">
           <HoverSections />
         </div>
+        <SkillSection />
       </main>
 
       <footer>
