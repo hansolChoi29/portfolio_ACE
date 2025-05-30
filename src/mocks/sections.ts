@@ -37,8 +37,8 @@ export const SkillBadges: SkillBadgeData[] = [
   // Back-End
   {
     label: "TanStack Query",
-    src: "https://cdn.simpleicons.org/tanstackquery/092E20",
+    src: "https://cdn.simpleicons.org/reactquery/FF4154",
   },
   { label: "Serverless", src: "https://cdn.simpleicons.org/serverless/222222" },
-  { label: "Zustand", src: "https://cdn.simpleicons.org/zustand/00C8A1" },
+  { label: "Zustand", src: "https://cdn.simpleicons.org/redux/764ABC" },
 ];
