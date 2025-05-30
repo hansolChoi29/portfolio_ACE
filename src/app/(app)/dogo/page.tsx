@@ -1,10 +1,9 @@
-
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
-import LinkPage from "./components/LinkPage";
-import ProjectRole from "./components/ProjectRole";
+import { motion } from "framer-motion";
+import LinkPage from "./components/DogoLinkPage";
+import ProjectRole from "./components/DogoProjectRole";
 import DogoAuth from "./components/DogoAuth";
-import DogoModal from "./components/DogoModla";
+import DogoModal from "./components/DogoModal";
 import DogoInquiry from "./components/DogoInquiry";
 import { useRouter } from "next/navigation";
 export default function DogoPage() {
@@ -13,9 +12,9 @@ export default function DogoPage() {
     router.push("/");
   };
   return (
-    <AnimatePresence>
+    <section className="flex flex-col gap-24 py-24">
       <motion.div
-        className="fixed inset-0 z-[9999] bg-[#efefef] sm:p-12 p-3 overflow-auto"
+        className="relative z-[9999] sm:p-12 p-3 overflow-auto"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
@@ -49,7 +48,6 @@ export default function DogoPage() {
           </motion.button>
         </div>
       </motion.div>
-    </AnimatePresence>
+    </section>
   );
-
 }

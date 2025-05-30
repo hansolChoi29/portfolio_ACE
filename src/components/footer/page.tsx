@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="row-start-3 flex gap-[24px] flex-wrap ">
       <div className="bg-black flex flex-col md:flex-row items-center justify-between py-10 w-full px-10">
         {/* 아이콘 출처 문구 */}
-        <div className="text-xs text-white mb-4 md:mb-0">
+        <div className="text-xs text-white mb-4 md:mb-0 ">
           Icons by{" "}
           <Link
             href="https://www.flaticon.com/free-icons/cdn"
