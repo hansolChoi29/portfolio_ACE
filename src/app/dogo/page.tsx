@@ -1,3 +1,4 @@
+
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import LinkPage from "./components/LinkPage";
@@ -50,4 +51,5 @@ export default function DogoPage() {
       </motion.div>
     </AnimatePresence>
   );
+
 }
