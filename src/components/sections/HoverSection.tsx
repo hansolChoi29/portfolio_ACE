@@ -12,10 +12,7 @@ export default function HoverSections() {
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
 
   // 각 카드마다 독립된 animation controls 생성
-  const controls0 = useAnimation();
-  const controls1 = useAnimation();
-  const controls2 = useAnimation();
-  const controlsArr = [controls0, controls1, controls2];
+  const controlsArr = [useAnimation(), useAnimation(), useAnimation()];
 
   const handleClick =
     (idx: number, href: string) => async (e: React.MouseEvent) => {
@@ -61,21 +58,20 @@ export default function HoverSections() {
                 if (activeIdx === null) setHovered(null);
               }}
               onClick={handleClick(idx, section.href)}
-              className={` relative flex items-center justify-center overflow-hidden
-    transition-all duration-500 ease-in-out cursor-pointer
-    ${
-      activeIdx !== null
-        ? isActive
-          ? "basis-full"
-          : "basis-0"
-        : hovered === null
-        ? "basis-1/3"
-        : isHovered
-        ? "basis-full"
-        : "basis-0"
-    }
-     ${isHovered ? section.colorClass : "bg-black"}
-              }`}
+              className={`relative flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out cursor-pointer
+                ${
+                  activeIdx !== null
+                    ? isActive
+                      ? "basis-full"
+                      : "basis-0"
+                    : hovered === null
+                    ? "basis-1/3"
+                    : isHovered
+                    ? "basis-full"
+                    : "basis-0"
+                }
+                ${isHovered ? section.colorClass : "bg-black"}
+              `}
             >
               <Image
                 src={section.img}
@@ -85,29 +81,35 @@ export default function HoverSections() {
                 className="w-full h-full object-contain"
                 priority
               />
+
               <div
-                className={`absolute inset-0 bg-black transition-opacity duration-500 ease-in-out ${
-                  isActive || isHovered ? "opacity-0" : "opacity-50"
-                }`}
+                className={`absolute inset-0 bg-black transition-opacity duration-500 ease-in-out
+                  ${isActive || isHovered ? "opacity-0" : "opacity-50"}
+                `}
               />
+
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="relative p-2 w-50 h-50 flex justify-center items-center">
                   <div
                     className={`absolute inset-0 ${
                       section.colorClass
-                    } rounded-lg origin-center transition-transform duration-500 ease-out ${
-                      isHovered ? "scale-300 opacity-0" : "scale-100"
-                    }`}
+                    } rounded-lg origin-center transition-transform duration-500 ease-out
+                      ${isHovered ? "scale-300 opacity-0" : "scale-100"}
+                    `}
                   />
-                  <span className="relative z-10 px-6 py-3 text-white text-2xl font-bold rounded-lg">
-                    {section.label}
-                  </span>
+                  {!isHovered && (
+                    <span className="relative z-10 px-6 py-3 text-white text-2xl font-bold rounded-lg">
+                      {section.label}
+                    </span>
+                  )}
                 </div>
               </div>
+
+              {/* 설명 텍스트 */}
               <span
-                className={`absolute bottom-16 left-10 text-white text-3xl transition-opacity duration-800 ease-in-out delay-200 ${
-                  isHovered ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute bottom-16 left-10 text-white text-3xl transition-opacity duration-800 ease-in-out delay-200
+                  ${isHovered ? "opacity-100" : "opacity-0"}
+                `}
               >
                 {section.desc}
               </span>
