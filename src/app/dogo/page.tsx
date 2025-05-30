@@ -1,8 +1,8 @@
 
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import LinkPage from "./components/LinkPage";
-import ProjectRole from "./components/ProjectRole";
+import LinkPage from "./components/DogoLinkPage";
+import ProjectRole from "./components/DogoProjectRole";
 import DogoAuth from "./components/DogoAuth";
 import DogoModal from "./components/DogoModla";
 import DogoInquiry from "./components/DogoInquiry";
