@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import LinkPage from "./components/DogoLinkPage";
 import ProjectRole from "./components/DogoProjectRole";
 import DogoAuth from "./components/DogoAuth";
-import DogoModal from "./components/DogoModla";
+import DogoModal from "./components/DogoModal";
 import DogoInquiry from "./components/DogoInquiry";
 import { useRouter } from "next/navigation";
 export default function DogoPage() {
