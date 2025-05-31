@@ -12,7 +12,7 @@ export default function DogoPage() {
     router.push("/");
   };
   return (
-    <section className="flex flex-col gap-24 py-24">
+    <section className="flex flex-col gap-24 py-24 max-w-screen-lg  mx-auto">
       <motion.div
         className="relative z-[9999] p-12  overflow-auto"
         initial={{ opacity: 0, scale: 0.95 }}

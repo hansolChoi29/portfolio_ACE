@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export default function DogoInquiry() {
   return (
-    <div className="py-24">
+    <div className="mt-24">
+      <hr className="w-full" />
+
       <h1 className="font-bold text-3xl py-24   w-full flex justify-center">
         문의하기(InquiryModal)
       </h1>
@@ -45,7 +47,7 @@ export default function DogoInquiry() {
           src="/images/dogo/dogoInquirySuccess.png"
           alt="dogoInquirySuccess"
           width={400}
-          height={800}
+          height={900}
           style={{ height: "auto" }}
           layout="fixed"
           className="rounded-2xl w-full max-w-[400px]"
@@ -54,7 +56,7 @@ export default function DogoInquiry() {
           src="/images/dogo/dogoInquiryNoSignin.png"
           alt="dogoInquiryNoSignin"
           width={400}
-          height={950}
+          height={900}
           style={{ height: "auto" }}
           layout="fixed"
           className="rounded-2xl w-full max-w-[400px]"

@@ -13,7 +13,6 @@ export default function DuoDevelop() {
           <p className="text-base mb-4 whitespace-pre-wrap">
             {section.description}
           </p>
-
           {section.images?.map((img) => (
             <div
               key={img.src}
@@ -24,7 +23,7 @@ export default function DuoDevelop() {
                 alt={img.alt}
                 fill
                 sizes="(max-width: 800px) 100vw, 800px"
-                className="rounded object-contain"
+                className="rounded-2xl overflow-hidden"
                 priority
               />
             </div>

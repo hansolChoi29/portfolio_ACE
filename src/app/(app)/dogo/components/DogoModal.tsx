@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function DogoModal() {
   return (
-    <div className="py-24">
-      <h1 className="font-bold text-3xl py-24   w-full flex justify-center">
+    <div>
+      <h1 className="font-bold text-3xl w-full pb-8 flex justify-center">
         RoomDetailModal
       </h1>
       <div className="flex flex-col items-center gap-2">
