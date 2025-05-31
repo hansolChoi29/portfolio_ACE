@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function CamAuth() {
   return (
-    <section className="flex flex-col gap-24 py-24">
+    <section className="flex flex-col gap-24 ">
       <article className="flex flex-col justify-center items-center ">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 justify-center items-center ">
           <h1 className="font-bold text-3xl w-full text-center">auth</h1>
 
           <Image
@@ -24,7 +24,7 @@ export default function CamAuth() {
         <Image
           src="/images/camkeep/keepsignup.png"
           alt="main"
-          width={300}
+          width={400}
           height={300}
           priority
           className="rounded-2xl overflow-hidden"
@@ -40,13 +40,16 @@ export default function CamAuth() {
         <Image
           src="/images/camkeep/keepsignin.png"
           alt="main"
-          width={300}
+          width={400}
           height={300}
           priority
           className="rounded-2xl overflow-hidden"
         />{" "}
         <p className="text-base leading-relaxed">
           Google, Kakao OAuth 로그인 후 DB에 사용자 정보를 직접 upsert합니다.
+        </p>
+        <p className="text-base leading-relaxed">
+          추후에 네이버 로그인을 도입해볼까 합니다.
         </p>
       </article>
     </section>

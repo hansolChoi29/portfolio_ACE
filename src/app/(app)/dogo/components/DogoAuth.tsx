@@ -12,7 +12,10 @@ export default function DogoAuth() {
 
           {/* 이미지 그룹 */}
           {section.images?.map((img, index) => (
-            <div key={index} className="relative w-full mx-auto">
+            <div
+              key={index}
+              className="relative w-full flex flex-col justify-center items-center "
+            >
               <Image
                 src={img.src}
                 alt={img.alt}
@@ -35,6 +38,7 @@ export default function DogoAuth() {
               dangerouslySetInnerHTML={{ __html: text }}
             />
           ))}
+          <hr className="w-full my-4" />
         </section>
       ))}
     </div>

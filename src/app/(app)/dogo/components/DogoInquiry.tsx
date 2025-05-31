@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export default function DogoInquiry() {
   return (
-    <div className="py-24">
+    <div className="mt-24">
+      <hr className="w-full" />
+
       <h1 className="font-bold text-3xl py-24   w-full flex justify-center">
         문의하기(InquiryModal)
       </h1>
