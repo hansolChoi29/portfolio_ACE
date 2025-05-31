@@ -13,10 +13,10 @@ export default function DuodingcoPage() {
   return (
     <section className="flex flex-col gap-24 py-24">
       <div className="flex flex-col items-center">
-        <div className="text-black relative flex items-center justify-center py-8">
+        <div className=" relative flex items-center justify-center py-8">
           <h2 className="text-3xl font-bold my-24">duodingco</h2>
         </div>
-        <div className="flex flex-col text-base text-gray-700 w-full max-w-[800px]">
+        <div className="flex flex-col text-base  w-full max-w-[800px]">
           {/* 간단 소개 박스 */}
           <DuoLink />
           {/* 주요 역할 */}

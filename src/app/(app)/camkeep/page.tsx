@@ -23,12 +23,12 @@ export default function CamkeepPage() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="text-black relative flex items-center justify-center py-8">
+        <div className="relative flex items-center justify-center py-8">
           <h2 className="text-3xl font-bold my-24">camkeep</h2>
         </div>
         <CamLink />
         <CamRole />
-        <div className="flex flex-col items-center justify-center text-base text-gray-700 ">
+        <div className="flex flex-col items-center justify-center text-base">
           {/* 메인페이지 */}
           <CamMain />
           {/* auth */}

@@ -20,7 +20,7 @@ export default function DogoPage() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="text-black relative flex items-center justify-center py-8">
+        <div className="relative flex items-center justify-center py-8">
           <h2 className="text-3xl font-bold my-24">dogo-project</h2>
         </div>
         <LinkPage />
