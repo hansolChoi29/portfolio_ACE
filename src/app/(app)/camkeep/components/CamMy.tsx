@@ -9,7 +9,7 @@ export default function CamMy() {
         <div className="flex flex-col gap-4">
           <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
             mypage
-          </h1>{" "}
+          </h1>
           <Image
             src="/images/camkeep/keepmypc.png"
             alt="main"
@@ -28,7 +28,7 @@ export default function CamMy() {
           width={300}
           height={300}
           priority
-        />{" "}
+        />
         <p className="text-sm text-gray-600">pc에서는 이런 모습</p>
       </article>
       <article className="flex flex-col justify-center items-center ">
