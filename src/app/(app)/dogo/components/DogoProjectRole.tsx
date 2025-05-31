@@ -20,7 +20,7 @@ export default function ProjectRole() {
       }}
     >
       <motion.h1
-        className="my-24 font-bold sm:text-3xl text-xl  w-full flex justify-center"
+        className="my-24 font-bold text-3xl   w-full flex justify-center"
         variants={blockVariants}
       >
         주요 역할
@@ -31,8 +31,8 @@ export default function ProjectRole() {
           variants={blockVariants}
           className={`border-b border-black py-4 ${i === 3 ? "" : ""}`}
         >
-          <p className="font-bold sm:text-xl text-base">{title}</p>
-          <p className="sm:text-base text-sm">{desc}</p>
+          <p className="font-bold text-xl ">{title}</p>
+          <p className="text-base">{desc}</p>
         </motion.div>
       ))}
     </motion.div>

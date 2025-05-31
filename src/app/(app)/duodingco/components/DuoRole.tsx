@@ -21,7 +21,7 @@ export default function DuoRole() {
     >
       <motion.h1
         variants={blockVariants}
-        className="my-24 font-bold sm:text-3xl text-xl w-full flex justify-center"
+        className="my-24 font-bold text-3xl  w-full flex justify-center"
       >
         주요 역할
       </motion.h1>
@@ -29,8 +29,8 @@ export default function DuoRole() {
         variants={blockVariants}
         className="border-b border-black py-4"
       >
-        <p className="font-bold sm:text-xl text-base">단어 학습 기능 제공</p>
-        <p className="sm:text-base text-sm">
+        <p className="font-bold text-xl ">단어 학습 기능 제공</p>
+        <p className="text-base ">
           사용자가 단어를 학습할 수 있는 기능을 카드 형식으로 제공
         </p>
       </motion.div>
@@ -38,17 +38,15 @@ export default function DuoRole() {
         variants={blockVariants}
         className="border-b border-black py-4"
       >
-        <p className="font-bold sm:text-xl text-base">북마크 관리</p>
-        <p className="sm:text-base text-sm">
+        <p className="font-bold text-xl ">북마크 관리</p>
+        <p className="text-base ">
           사용자가 게시글을 북마크하여 나중에 다시 학습할 수 있도록 하고, 북마크
           상태를 실시간으로 업데이트
         </p>
       </motion.div>
       <motion.div variants={blockVariants} className="py-4">
-        <p className="font-bold sm:text-xl text-base">
-          뜨끈하게 올라온 학습리스트
-        </p>
-        <p className="sm:text-base text-sm">
+        <p className="font-bold text-xl ">뜨끈하게 올라온 학습리스트</p>
+        <p className="text-base ">
           Supabase의 시간순 정렬 로직을 활용해 최신 학습 내역을 한눈에 확인할 수
           있도록 구현한 페이지입니다.
         </p>

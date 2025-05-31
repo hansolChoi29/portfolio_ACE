@@ -7,9 +7,7 @@ export default function CamMy() {
     <section>
       <article className="flex flex-col justify-center items-center ">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
-            mypage
-          </h1>
+          <h1 className="font-bold text-3xl w-full text-center">mypage</h1>
           <Image
             src="/images/camkeep/keepmypc.png"
             alt="main"
@@ -33,9 +31,7 @@ export default function CamMy() {
       </article>
       <article className="flex flex-col justify-center items-center ">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
-            수정
-          </h1>
+          <h1 className="font-bold text-3xl  w-full text-center">수정</h1>
           <p className="text-sm text-gray-600">
             작성한 게시글을 조건에 맞게 수정 및 삭제할 수 있습니다.
           </p>
