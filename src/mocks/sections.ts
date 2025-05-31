@@ -70,7 +70,7 @@ export const SkillBadges: SkillBadgeData[] = [
 ];
 export const Articles: ArticleItem[] = [
   {
-    direction: "right",
+    direction: "left",
     img: "/images/home/emr.png",
     alt: "emr",
     paragraphs: [
@@ -84,7 +84,7 @@ export const Articles: ArticleItem[] = [
     ],
   },
   {
-    direction: "left",
+    direction: "right",
     img: "/images/home/tigersol.png",
     alt: "tigersol",
     paragraphs: [
@@ -99,7 +99,7 @@ export const Articles: ArticleItem[] = [
     ],
   },
   {
-    direction: "right",
+    direction: "left",
     img: "/images/home/winnersol.png",
     alt: "winnersol",
     paragraphs: [
