@@ -6,11 +6,11 @@ export default function DuoDevelop() {
     <div className="flex flex-col gap-24 py-24">
       {DuodingcoSections.map((section) => (
         <section key={section.title} className="flex flex-col gap-8">
-          <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
+          <h1 className="font-bold text-3xl w-full text-center">
             {section.title}
           </h1>
 
-          <p className="sm:text-base text-sm mb-4 whitespace-pre-wrap">
+          <p className="text-base mb-4 whitespace-pre-wrap">
             {section.description}
           </p>
 

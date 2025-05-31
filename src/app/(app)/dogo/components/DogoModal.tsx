@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function DogoModal() {
   return (
     <div className="py-24">
-      <h1 className="font-bold sm:text-3xl py-24  text-xl w-full flex justify-center">
+      <h1 className="font-bold text-3xl py-24   w-full flex justify-center">
         RoomDetailModal
       </h1>
       <div className="flex flex-col items-center gap-2">
@@ -16,7 +16,7 @@ export default function DogoModal() {
           layout="responsive"
           className="rounded-2xl w-full max-w-[800px]"
         />
-        <p className="sm:text-base text-sm mb-4">
+        <p className="text-base  mb-4">
           사용자가 객실 이미지를 더 쉽고 직관적으로 확인할 수 있도록 객실 상세
           이미지 모달과 <strong>자세히 보기</strong>
           모달을 개발했습니다. 특히 이미지 좌우에 슬라이드 버튼을 추가하여 여러
@@ -31,7 +31,7 @@ export default function DogoModal() {
           style={{ height: "auto" }}
           className="rounded-2xl w-full max-w-[800px]"
         />
-        <p className="sm:text-base text-sm mb-4">
+        <p className="text-base mb-4">
           객실의 세부 정보를 더욱 명확하게 전달하고 예약 전 사용자가 필요한 모든
           정보를 한눈에 파악할 수 있도록 상세 모달을 추가로 구현했습니다. 이
           모달 내에 <strong>예약하기</strong> 버튼을 배치하여 모달에서 얻은
@@ -47,7 +47,7 @@ export default function DogoModal() {
           layout="fixed"
           className="rounded-2xl w-full max-w-[400px]"
         />
-        <p className="sm:text-base text-sm mb-4">
+        <p className="text-base  mb-4">
           또한, 모달 내부에 탭 형태의 네비게이션을 추가하여 사용자가 원하는
           정보를 쉽게 찾아볼 수 있도록 하였습니다. 이를 통해 상세 정보, 후기,
           이용약관 등의 내용을 간편하게 전환하며 확인할 수 있는 직관적인 사용자

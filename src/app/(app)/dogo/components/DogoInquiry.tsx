@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function DogoInquiry() {
   return (
     <div className="py-24">
-      <h1 className="font-bold sm:text-3xl py-24  text-xl w-full flex justify-center">
+      <h1 className="font-bold text-3xl py-24   w-full flex justify-center">
         문의하기(InquiryModal)
       </h1>
-      <div className="sm:text-base text-sm mb-4">
+      <div className="text-base  mb-4">
         사용자들이 호텔 시설, 예약, 결제 등 특정 카테고리의 문의사항을 간편하게
         등록할 수 있도록 모달 형태의 문의 시스템을 구현하였습니다. 이 시스템은
         사용자만이 문의를 작성할 수 있도록 권한을 제한하고, 관리자와 사업자가

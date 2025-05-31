@@ -6,9 +6,7 @@ export default function CamAuth() {
     <section className="flex flex-col gap-24 py-24">
       <article className="flex flex-col justify-center items-center ">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
-            auth
-          </h1>
+          <h1 className="font-bold text-3xl w-full text-center">auth</h1>
           <Image
             src="/images/camkeep/keepauthpc.png"
             alt="main"
@@ -31,10 +29,8 @@ export default function CamAuth() {
       </article>
       <article className="flex flex-col justify-center items-center ">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
-            로그인
-          </h1>
-          <p className="sm:text-base text-sm leading-relaxed">
+          <h1 className="font-bold text-3xl  w-full text-center">로그인</h1>
+          <p className="text-base  leading-relaxed">
             서버 액션을 사용해 세션 정보를 안전하게 관리합니다.
           </p>
         </div>{" "}
@@ -45,7 +41,7 @@ export default function CamAuth() {
           height={300}
           priority
         />{" "}
-        <p className="sm:text-base text-sm leading-relaxed">
+        <p className="text-base leading-relaxed">
           Google, Kakao OAuth 로그인 후 DB에 사용자 정보를 직접 upsert합니다.
         </p>
       </article>

@@ -6,7 +6,8 @@ import SkillSection from "@/components/sections/SkillSection";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Greetings from "@/components/sections/Greetings";
-
+//TODO: 글자색과 각 여백
+// TODO: 각 카드 내부가 메인보다 너무 초라함 개선필요
 export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
 

@@ -6,7 +6,7 @@ export default function DogoAuth() {
     <div className="flex flex-col gap-24 py-24">
       {DogoAuthSections.map((section) => (
         <section key={section.title} className="flex flex-col gap-8">
-          <h1 className="font-bold sm:text-3xl text-xl w-full text-center">
+          <h1 className="font-bold text-3xl w-full text-center">
             {section.title}
           </h1>
 
@@ -31,7 +31,7 @@ export default function DogoAuth() {
           {section.texts.map((text, i) => (
             <p
               key={i}
-              className={`sm:text-base text-sm leading-relaxed ${
+              className={`text-base  leading-relaxed ${
                 i < section.texts.length - 1 ? "mb-4" : ""
               }`}
               dangerouslySetInnerHTML={{ __html: text }}

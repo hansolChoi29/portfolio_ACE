@@ -17,18 +17,18 @@ export default function CamkeepPage() {
   return (
     <section className="flex flex-col gap-24 ">
       <motion.div
-        className="relative z-[9999] sm:p-12 p-3 overflow-auto"
+        className="relative z-[9999] p-12  overflow-auto"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
       >
         <div className="text-black relative flex items-center justify-center py-8">
-          <h2 className="sm:text-3xl font-bold my-24">camkeep</h2>
+          <h2 className="text-3xl font-bold my-24">camkeep</h2>
         </div>
         <CamLink />
         <CamRole />
-        <div className="flex flex-col items-center justify-center text-sm sm:text-base text-gray-700 ">
+        <div className="flex flex-col items-center justify-center text-base text-gray-700 ">
           {/* 메인페이지 */}
           <CamMain />
           {/* auth */}

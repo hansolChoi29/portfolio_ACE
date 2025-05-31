@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function LinkPage() {
   return (
     <section className="flex flex-col items-center">
-      <div className="flex flex-col text-sm sm:text-base  text-gray-700 w-full max-w-[800px]">
+      <div className="flex flex-col text-base  text-gray-700 w-full max-w-[800px]">
         {/* 간단 소개박스 */}
         <motion.div className="flex flex-col border rounded-xl border-black px-4 py-4 font-bold gap-2">
           <div className="flex flex-col border-b border-black pb-2">
