@@ -5,7 +5,7 @@ import { Articles } from "@/mocks/sections";
 export default function Greetings() {
   return (
     <section className="w-full flex justify-center items-center">
-      <div className="flex flex-col gap-4 m-4 w-[100vh]">
+      <div className="flex flex-col  gap-4 m-4 w-[100vh]">
         {Articles.map(({ direction, img, alt, paragraphs }, index) => (
           <motion.article
             key={index}
