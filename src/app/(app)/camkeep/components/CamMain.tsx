@@ -44,9 +44,10 @@ export default function CamMain() {
         <Image
           src="/images/camkeep/keepcheck.png"
           alt="main"
-          width={200}
-          height={200}
+          width={300}
+          height={300}
           priority
+          className="rounded-3xl"
         />
       </article>
     </section>
