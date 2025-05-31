@@ -28,7 +28,7 @@ export default function DuodingcoPage() {
       <div className="w-full flex justify-center items-center">
         <motion.button
           onClick={handleHome}
-          className="fixed bottom-10 right-10 bg-[#EEC18D] hover:text-red-500 hover:bg-white cursor-pointer text-white text-2xl rounded-2xl p-4 shadow-lg"
+          className="fixed bottom-10 right-10 bg-[#14142D] hover:text-red-500 hover:bg-white cursor-pointer text-white text-2xl rounded-2xl p-4 shadow-lg"
           initial={{ y: 0 }}
           animate={{ y: [0, -10, 0] }}
           transition={{ duration: 2, ease: "easeInOut", repeat: Infinity }}
