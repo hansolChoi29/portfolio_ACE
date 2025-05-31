@@ -33,12 +33,12 @@ export default function CamLink() {
         </Link>
       </div>
       <Link
-        href="https://winwin0219.tistory.com/entry/React-%EC%8B%AC%ED%99%94-Intro-%EC%8B%A4%EB%AC%B4%EC%99%80-%EA%B0%80%EA%B9%8C%EC%9A%B4-%EC%88%98%EC%A4%80%EC%9D%98-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Trouble-Shooting"
+        href="https://winwin0219.tistory.com/entry/CAMKEEP%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88-%EB%A1%9C%EA%B7%B8%EC%9D%B8%C2%B7%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83-%ED%86%A0%ED%81%B0-%EC%BF%A0%ED%82%A4-%EC%B2%98%EB%A6%AC-with-RSC"
         className="font-bold text-[#757575] ml-1 hover:text-[#ff5d5d]"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p>트러블슈팅 =해야됨</p>
+        <p>트러블슈팅 </p>
       </Link>
     </motion.div>
   );
