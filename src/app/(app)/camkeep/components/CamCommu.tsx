@@ -18,6 +18,7 @@ export default function CamCommu() {
           width={300}
           height={300}
           priority
+          className="rounded-2xl overflow-hidden"
         />
       </article>
       <article className="flex flex-col justify-center items-center ">
@@ -33,6 +34,7 @@ export default function CamCommu() {
           width={300}
           height={300}
           priority
+          className="rounded-2xl overflow-hidden"
         />
       </article>
     </section>

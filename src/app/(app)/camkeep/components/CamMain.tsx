@@ -17,6 +17,7 @@ export default function CamMain() {
           width={300}
           height={300}
           priority
+          className="rounded-2xl overflow-hidden"
         />
       </article>
       <article className="flex flex-col justify-center items-center ">
@@ -32,6 +33,7 @@ export default function CamMain() {
           width={300}
           height={300}
           priority
+          className="rounded-2xl overflow-hidden"
         />
       </article>
       <article className="flex flex-col justify-center items-center ">
@@ -41,13 +43,14 @@ export default function CamMain() {
             카테고리별로 체크리스트를 생성·저장하며 개인화된 준비가 가능합니다.
           </p>
         </div>
+
         <Image
           src="/images/camkeep/keepcheck.png"
           alt="main"
           width={300}
           height={300}
           priority
-          className="rounded-3xl"
+          className="rounded-2xl overflow-hidden"
         />
       </article>
     </section>

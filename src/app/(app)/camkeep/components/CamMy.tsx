@@ -14,8 +14,9 @@ export default function CamMy() {
             width={800}
             height={300}
             priority
+            className="rounded-2xl overflow-hidden"
           />
-          <p className="text-sm text-gray-600">
+          <p className="text-sm ">
             로그인한 유저의 게시글, 찜 목록, 쿠폰 정보를 통합 조회할 수
             있습니다.
           </p>
@@ -26,13 +27,14 @@ export default function CamMy() {
           width={300}
           height={300}
           priority
+          className="rounded-2xl overflow-hidden"
         />
-        <p className="text-sm text-gray-600">pc에서는 이런 모습</p>
+        <p className="text-sm">pc에서는 이런 모습</p>
       </article>
       <article className="flex flex-col justify-center items-center ">
         <div className="flex flex-col gap-4">
           <h1 className="font-bold text-3xl  w-full text-center">수정</h1>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm  ">
             작성한 게시글을 조건에 맞게 수정 및 삭제할 수 있습니다.
           </p>
         </div>
@@ -42,6 +44,7 @@ export default function CamMy() {
           width={300}
           height={300}
           priority
+          className="rounded-2xl overflow-hidden"
         />
       </article>
     </section>

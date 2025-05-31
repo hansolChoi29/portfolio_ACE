@@ -11,7 +11,7 @@ export default function DuodingcoPage() {
     router.push("/");
   };
   return (
-    <section className="flex flex-col gap-24 py-24">
+    <section className="flex flex-col gap-24 py-24 max-w-screen-lg  mx-auto">
       <div className="flex flex-col items-center">
         <div className=" relative flex items-center justify-center py-8">
           <h2 className="text-3xl font-bold my-24">duodingco</h2>

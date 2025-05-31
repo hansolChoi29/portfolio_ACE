@@ -45,7 +45,7 @@ export default function DogoInquiry() {
           src="/images/dogo/dogoInquirySuccess.png"
           alt="dogoInquirySuccess"
           width={400}
-          height={800}
+          height={900}
           style={{ height: "auto" }}
           layout="fixed"
           className="rounded-2xl w-full max-w-[400px]"
@@ -54,7 +54,7 @@ export default function DogoInquiry() {
           src="/images/dogo/dogoInquiryNoSignin.png"
           alt="dogoInquiryNoSignin"
           width={400}
-          height={950}
+          height={900}
           style={{ height: "auto" }}
           layout="fixed"
           className="rounded-2xl w-full max-w-[400px]"

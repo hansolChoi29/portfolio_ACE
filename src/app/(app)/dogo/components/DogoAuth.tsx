@@ -11,18 +11,16 @@ export default function DogoAuth() {
           </h1>
 
           {/* 이미지 그룹 */}
-          {section.images?.map((img) => (
-            <div
-              key={img.src}
-              className="relative w-full max-w-[800px] mx-auto aspect-video"
-            >
+          {section.images?.map((img, index) => (
+            <div key={index} className="relative w-full mx-auto">
               <Image
                 src={img.src}
                 alt={img.alt}
-                fill
-                sizes="(max-width: 800px) 100vw, 800px"
-                className="rounded-2xl object-contain"
+                layout="fixed" // 고정 크기 적용
+                width={img.width} // 정확한 width 적용
+                height={img.height} // 정확한 height 적용
                 priority
+                className="rounded-2xl overflow-hidden"
               />
             </div>
           ))}

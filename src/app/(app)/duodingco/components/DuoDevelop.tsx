@@ -24,7 +24,7 @@ export default function DuoDevelop() {
                 alt={img.alt}
                 fill
                 sizes="(max-width: 800px) 100vw, 800px"
-                className="rounded object-contain"
+            className="rounded-2xl overflow-hidden"
                 priority
               />
             </div>
