@@ -15,7 +15,7 @@ export default function CamkeepPage() {
     router.push("/");
   };
   return (
-    <section className="flex flex-col gap-24 py-24 ">
+    <section className="flex flex-col gap-24 ">
       <motion.div
         className="relative z-[9999] sm:p-12 p-3 overflow-auto"
         initial={{ opacity: 0, scale: 0.95 }}

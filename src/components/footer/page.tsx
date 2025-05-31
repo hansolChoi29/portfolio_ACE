@@ -23,10 +23,10 @@ export default function Footer() {
         </div>
         {/* 전화번호, 이메일, 소셜 아이콘 */}
         <div className="flex flex-col items-end  text-sm text-gray-800">
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <p className="text-white">전화번호</p>
             <p className="text-white">010-2915-2931</p>
-          </div>
+          </div> */}
 
           <div className="flex gap-2 mb-2">
             <p className="text-white">E-mail</p>
