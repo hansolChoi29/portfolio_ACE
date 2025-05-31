@@ -5,5 +5,5 @@ export default function SiteLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className=" mx-auto w-full  bg-[#FFF6EB]">{children}</div>;
+  return <div className=" mx-auto w-full  bg-[#FFFBF4]">{children}</div>;
 }
