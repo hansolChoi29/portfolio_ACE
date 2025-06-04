@@ -9,21 +9,22 @@ import CamAuth from "./components/CamAuth";
 import CamPing from "./components/CamPing";
 import CamCommu from "./components/CamCommu";
 import CamMy from "./components/CamMy";
+
 export default function CamkeepPage() {
   const router = useRouter();
   const handleHome = () => {
     router.push("/");
   };
   return (
-    <section className="flex flex-col gap-24 max-w-screen-lg  mx-auto">
+    <section className="bg-[#393939] text-white flex flex-col gap-24 px-2 lg:px-80 mx-auto">
       <motion.div
-        className="relative z-[9999] p-12  overflow-auto"
+        className="relative z-[9999] overflow-auto flex flex-col justify-center"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="relative flex items-center justify-center py-8">
+        <div className="relative flex items-center justify-center">
           <h2 className="text-3xl font-bold my-24">camkeep</h2>
         </div>
         <CamLink />
@@ -40,7 +41,6 @@ export default function CamkeepPage() {
           {/* 마이페이지 */}
           <CamMy />
         </div>
-        {/*  */}
         <div className="w-full flex justify-center items-center">
           <motion.button
             onClick={handleHome}

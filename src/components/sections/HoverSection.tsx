@@ -11,7 +11,6 @@ export default function HoverSections() {
   const [hovered, setHovered] = useState<number | null>(null);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
 
-  // 각 카드마다 독립된 animation controls 생성
   const controlsArr = [useAnimation(), useAnimation(), useAnimation()];
 
   const handleClick =
@@ -37,86 +36,106 @@ export default function HoverSections() {
     };
 
   return (
-    <div className="flex h-[70vh] overflow-hidden">
-      <AnimatePresence>
-        {Sections.map((section, idx) => {
-          const controls = controlsArr[idx];
-          const isActive = activeIdx === idx;
-          const isHovered = hovered === idx;
+    <div className="w-full">
+      <div className="flex h-[70vh] overflow-hidden">
+        <AnimatePresence>
+          {Sections.map((section, idx) => {
+            const controls = controlsArr[idx];
+            const isActive = activeIdx === idx;
+            const isHovered = hovered === idx;
 
-          return (
-            <motion.div
-              key={idx}
-              layout
-              initial={false}
-              animate={controls}
-              whileHover={!activeIdx ? { scale: 1.02 } : {}}
-              onMouseEnter={() => {
-                if (activeIdx === null) setHovered(idx);
-              }}
-              onMouseLeave={() => {
-                if (activeIdx === null) setHovered(null);
-              }}
-              onClick={handleClick(idx, section.href)}
-              className={`relative flex items-center justify-center overflow-hidden transition-all duration-500 ease-in-out cursor-pointer
-                ${
-                  activeIdx !== null
-                    ? isActive
+            return (
+              <motion.div
+                key={idx}
+                layout
+                initial={false}
+                animate={controls}
+                whileHover={!activeIdx ? { scale: 1.02 } : {}}
+                onMouseEnter={() => {
+                  if (activeIdx === null) setHovered(idx);
+                }}
+                onMouseLeave={() => {
+                  if (activeIdx === null) setHovered(null);
+                }}
+                onClick={handleClick(idx, section.href)}
+                className={`
+                  relative flex items-center justify-center overflow-hidden transition-all
+                  duration-500 ease-in-out cursor-pointer
+                  ${
+                    activeIdx !== null
+                      ? isActive
+                        ? "basis-full"
+                        : "basis-0"
+                      : hovered === null
+                      ? "basis-1/3"
+                      : isHovered
                       ? "basis-full"
                       : "basis-0"
-                    : hovered === null
-                    ? "basis-1/3"
-                    : isHovered
-                    ? "basis-full"
-                    : "basis-0"
-                }
-                ${isHovered ? section.colorClass : "bg-black"}
-              `}
-            >
-              <Image
-                src={section.img}
-                alt={section.label}
-                width={1600}
-                height={900}
-                className="w-full h-full object-contain"
-                priority
-              />
-
-              <div
-                className={`absolute inset-0 bg-black transition-opacity duration-500 ease-in-out
-                  ${isActive || isHovered ? "opacity-0" : "opacity-50"}
-                `}
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative p-2 w-50 h-50 flex justify-center items-center">
-                  <div
-                    className={`absolute inset-0 ${
-                      section.colorClass
-                    } rounded-lg origin-center transition-transform duration-500 ease-out
-                      ${isHovered ? "scale-300 opacity-0" : "scale-100"}
-                    `}
-                  />
-                  {!isHovered && (
-                    <span className="relative z-10 px-6 py-3 text-white text-2xl font-bold rounded-lg">
-                      {section.label}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {/* 설명 텍스트 */}
-              <span
-                className={`absolute bottom-16 left-10 text-white text-3xl transition-opacity duration-800 ease-in-out delay-200
-                  ${isHovered ? "opacity-100" : "opacity-0"}
+                  }
+                  ${isHovered ? section.colorClass : "bg-black"}
                 `}
               >
-                {section.desc}
-              </span>
-            </motion.div>
-          );
-        })}
-      </AnimatePresence>
+                <Image
+                  src={section.img}
+                  alt={section.label}
+                  width={1600}
+                  height={900}
+                  className="w-full h-full object-cover transition-transform duration-500 ease-in-out"
+                  priority
+                />
+
+                <div
+                  className={`absolute inset-0 bg-black transition-opacity duration-500 ease-in-out 
+                    ${isActive || isHovered ? "opacity-0" : "opacity-50"}
+                  `}
+                />
+
+                <span
+                  className={`absolute bottom-16 left-10 text-white text-3xl transition-opacity duration-800 ease-in-out delay-200
+                    ${isHovered ? "opacity-100" : "opacity-0"}
+                  `}
+                >
+                  {section.desc}
+                </span>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
+      </div>
+      <div className=" ">
+        {activeIdx === null && (
+          <div className="flex justify-center ">
+            {Sections.map((section, idx) => {
+              const isHovered = hovered === idx;
+              return (
+                <motion.button
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 15 }}
+                  key={idx}
+                  onClick={handleClick(idx, section.href)}
+                  onMouseEnter={() => {
+                    if (activeIdx === null) setHovered(idx);
+                  }}
+                  onMouseLeave={() => {
+                    if (activeIdx === null) setHovered(null);
+                  }}
+                  className={`
+                  px-6 py-3   cursor-pointer text-white text-xl font-bold transition-colors duration-300 
+                  ${
+                    isHovered
+                      ? "bg-opacity-80 " + section.colorClass
+                      : section.colorClass
+                  }
+                `}
+                >
+                  {section.label}
+                </motion.button>
+              );
+            })}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,23 +1,62 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 export default function CamLink() {
   return (
-    <motion.div className="flex flex-col border rounded-xl border-black px-4 py-4 font-bold gap-2">
+    <motion.div className="flex flex-col border rounded-xl border-black px-4 py-4 gap-4">
       <div className="flex flex-col border-b border-black pb-2">
-        <p>
-          Frontend : React, Next.js, TypeScript, Tailwind CSS, ShadCN, Zustand
-        </p>
-        <p>Data Fetching : React Query</p>
-        <p>Authentication : Supabase OAuth (Google, Kakao), Server Actions</p>
-        <p>Database : Supabase (RLS 적용)</p>
-        <p>Rendering : CSR 기반 Hybrid Routing </p>
-        <p>패키지매니저 : npm</p>
+        <div className="flex gap-4 items-center pb-4">
+          Frontend
+          <Image
+            src="https://cdn.simpleicons.org/react/61DAFB"
+            alt="react"
+            width={30}
+            height={30}
+          />
+          <Image
+            src="https://cdn.simpleicons.org/nextdotjs/000000"
+            alt="nextdotjs"
+            width={30}
+            height={30}
+          />
+          <Image
+            src="https://cdn.simpleicons.org/typescript/3178C6"
+            alt="typescript"
+            width={30}
+            height={20}
+          />
+          <Image
+            src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+            alt="tailwindcss"
+            width={30}
+            height={30}
+          />
+          <Image
+            src="https://cdn.simpleicons.org/shadcnui/000000"
+            alt="shadcnui"
+            width={30}
+            height={30}
+          />
+          <Image
+            src="https://cdn.simpleicons.org/redux/764ABC"
+            alt="shadcnui"
+            width={30}
+            height={30}
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <p>Data Fetching : React Query</p>
+          <p>Authentication : Supabase OAuth (Google, Kakao), Server Actions</p>
+          <p>Database : Supabase (RLS 적용)</p>
+          <p>Rendering : CSR 기반 Hybrid Routing </p>
+          <p>패키지매니저 : npm</p>
+        </div>
       </div>
       <div className="flex flex-col border-b border-black pb-2">
         <Link
           href="https://camkeep.vercel.app/"
-          className="font-bold text-[#757575] ml-1 hover:text-[#ff5d5d]"
+          className=" text-[#757575] ml-1 hover:text-[#ff5d5d]"
           target="_blank"
           rel="noopener noreferrer"
         >
