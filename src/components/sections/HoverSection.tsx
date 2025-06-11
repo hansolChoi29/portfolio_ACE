@@ -60,7 +60,7 @@ export default function HoverSections() {
                 onClick={handleClick(idx, section.href)}
                 className={`
                   relative flex items-center justify-center overflow-hidden transition-all
-                  duration-500 ease-in-out cursor-pointer
+                  duration-500 ease-in-out cursor-pointer 
                   ${
                     activeIdx !== null
                       ? isActive
@@ -109,7 +109,6 @@ export default function HoverSections() {
               const isHovered = hovered === idx;
               return (
                 <motion.button
-                  whileHover={{ scale: 1.1, y: -5 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 300, damping: 15 }}
                   key={idx}
@@ -121,7 +120,7 @@ export default function HoverSections() {
                     if (activeIdx === null) setHovered(null);
                   }}
                   className={`
-                  px-6 py-3   cursor-pointer text-white text-xl font-bold transition-colors duration-300 
+                  px-6 py-3 w-full  cursor-pointer text-white text-xl font-bold 
                   ${
                     isHovered
                       ? "bg-opacity-80 " + section.colorClass
