@@ -9,6 +9,7 @@ import CamAuth from "./components/CamAuth";
 import CamPing from "./components/CamPing";
 import CamCommu from "./components/CamCommu";
 import CamMy from "./components/CamMy";
+import CamIntro from "./components/CamIntro";
 
 export default function CamkeepPage() {
   const router = useRouter();
@@ -28,9 +29,11 @@ export default function CamkeepPage() {
           <h2 className="text-3xl font-bold my-24">camkeep</h2>
         </div>
         <CamLink />
+        <CamIntro />
         <CamRole />
         <div className="flex flex-col items-center justify-center text-base">
           {/* 메인페이지 */}
+
           <CamMain />
           {/* auth */}
           <CamAuth />
