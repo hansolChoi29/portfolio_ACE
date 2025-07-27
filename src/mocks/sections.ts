@@ -2,13 +2,6 @@ import { ArticleItem, SkillBadgeData } from "@/lib/types/sectionType";
 
 export const Sections = [
   {
-    label: "DuoDingCo",
-    img: "/images/cards/duodingcoproject.png",
-    href: "/duodingco",
-    desc: "낱말카드 플랫폼",
-    colorClass: "bg-[#14142D]",
-  },
-  {
     label: "Dogo",
     img: "/images/cards/dogoproject.png",
     href: "/dogo",

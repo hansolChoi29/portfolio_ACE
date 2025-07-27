@@ -67,7 +67,7 @@ export default function HoverSections() {
                         ? "basis-full"
                         : "basis-0"
                       : hovered === null
-                      ? "basis-1/3"
+                      ? "basis-1/2"
                       : isHovered
                       ? "basis-full"
                       : "basis-0"
